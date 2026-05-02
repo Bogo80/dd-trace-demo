@@ -1,6 +1,5 @@
 apiVersion: v3
 kind: service
-
 metadata:
   name: dd-demo
   displayName: DD Trace Demo
@@ -15,14 +14,12 @@ metadata:
     - name: Source Code
       type: repo
       url: https://github.com/Bogo80/dd-trace-demo
-
-spec:
-  lifecycle: experimental
-  tier: low
-  languages:
-    - python
-  type: web
-
+  spec:
+    lifecycle: experimental
+    tier: low
+    languages:
+      - python
+    type: web
 datadog:
   codeLocations:
     - repositoryURL: https://github.com/Bogo80/dd-trace-demo
