@@ -28,6 +28,10 @@ def process():
         time.sleep(random.uniform(0.05, 0.2))
     return jsonify({"status": "done"})
 
+@app.route("/health")
+def health():
+    return jsonify({"status": "healthy"})
+
 @app.route("/error")
 def error():
     raise ValueError("intentional error for tracing demo")
