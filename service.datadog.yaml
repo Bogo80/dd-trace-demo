@@ -14,7 +14,7 @@ metadata:
     - name: Source Code
       type: repo
       url: https://github.com/Bogo80/dd-trace-demo
-  spec:
+spec:
     lifecycle: experimental
     tier: low
     languages:
